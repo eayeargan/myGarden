@@ -2,6 +2,7 @@
 
 //import { createCrop } from "/gardenCropsUtility.js"
 
+
 const cropFactory = (name, soilHumidityPref = 80, sunExposurePref = 8, days = 800) => {
     return {
         name: name,
@@ -121,7 +122,7 @@ const garden = {
         }
     }
 }
-
+console.log("The Garden App is up and running!");
 garden.listGardenCrops();
 
 garden.addCrop('Kale');
@@ -139,6 +140,8 @@ console.log(garden.checkHumidityInput('Carrot', 255));
 console.log(garden.checkSunExposure('Carrot', 80));
 
 console.log(garden. checkSunExposure('Carrot', 25));
+
+
 
 console.log(garden.checkDaysToHarvest('Kale', 80));
 
